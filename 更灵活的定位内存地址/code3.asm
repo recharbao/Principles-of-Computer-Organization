@@ -19,7 +19,7 @@ e:mov ds:[40H], cx
   mov cx, 3
 
 s:mov al, [bx+si]
-  mov al, 11011111b
+  and al, 11011111b
   mov [bx+si], al
   inc si
   loop s
